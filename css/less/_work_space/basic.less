@@ -1,78 +1,99 @@
 //	PAGE Style
 //==================================================
-html, body{
-	height: 100%;
+html, body {
+    height: 100%;
 }
-.index-page{
-	.subtitle{
-		font-size: 1.14em;
-		text-transform: uppercase;
-		color: #b5b5b5;
-	}
+
+.index-page {
+    .title {
+        margin-bottom: 68px;
+    }
+    .subtitle {
+        font-size: 1.142em;
+        text-transform: uppercase;
+        color: #b5b5b5;
+        letter-spacing: 5px;
+        line-height: 1.8;
+    }
 }
-.index-wrapper{
-	min-height: 100%;
-	position: relative;
-	section{
-		position: absolute;
-		top: 50%;
-		left: 0;
-		right: 0;
-		.translate(0;-50%);
-	}
+
+.index-container{
+    padding-top: 100px;
 }
+
+.index-wrapper {
+    min-height: 100%;
+    position: relative;
+    section {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        .translate(0; -50%);
+    }
+}
+
 body {
-	// custom scroll-bar
-	//.scroll-bar();
+    // custom scroll-bar
+    //.scroll-bar();
 }
+
 main {
 }
+
 #page {
 }
+
 //	HEADER Style
 //==================================================
 header {
-	background : @header-bg;
-	color      : @header-color;
+    background: @header-bg;
+    color: @header-color;
 
-	// -- LOGO Style
-	.logo {
-		text-decoration : none;
+    // -- LOGO Style
+    .logo {
+        text-decoration: none;
 
-		a {
-			display : inline-block;
-		}
+        a {
+            display: inline-block;
+        }
 
-		img {
-		}
-	}
+        img {
+        }
+    }
 }
+
 // -- NAV Style
 nav {
 }
+
 //	CONTENT Style
 //==================================================
 article {
 }
+
 section {
 }
+
 //	SIDEBAR Style
 //==================================================
 aside {
-	.aside-box {
-		margin-bottom : 30px;
-	}
+    .aside-box {
+        margin-bottom: 30px;
+    }
 }
+
 //	FOOTER Style
 //==================================================
 footer {
-	padding    : @padding-larger-vertical * 2 0;
-	background : @footer-bg;
-	color      : @footer-color;
-	font-size  : @font-size-small;
+    padding: @padding-larger-vertical * 2 0;
+    background: @footer-bg;
+    color: @footer-color;
+    font-size: @font-size-small;
 }
+
 //	Button to scroll top
 //==================================================
 #go-top {
-	.button-color(#ffffff; fade(#000000, 50%); fade(#000000, 50%); @primary-color; @primary-bg; @primary-bg);
+    .button-color(#ffffff; fade(#000000, 50%); fade(#000000, 50%); @primary-color; @primary-bg; @primary-bg);
 }

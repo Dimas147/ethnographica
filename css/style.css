@@ -2,10 +2,18 @@ html,
 body {
   height: 100%;
 }
+.index-page .title {
+  margin-bottom: 68px;
+}
 .index-page .subtitle {
-  font-size: 1.14em;
+  font-size: 1.142em;
   text-transform: uppercase;
   color: #b5b5b5;
+  letter-spacing: 5px;
+  line-height: 1.8;
+}
+.index-container {
+  padding-top: 100px;
 }
 .index-wrapper {
   min-height: 100%;
@@ -48,7 +56,7 @@ footer {
 #go-top:hover,
 #go-top:active,
 #go-top.active {
-  color: #FFF;
+  color: #ffffff;
   border-color: #ae2929;
   background-color: #ae2929;
 }
@@ -82,7 +90,7 @@ form .captcha .captcha_image a {
   font-family: "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
   display: inline-block;
   vertical-align: middle;
-  color: #FFF;
+  color: #ffffff;
   border-color: #770707;
   background-color: #ae2929;
   -webkit-user-select: none;
@@ -105,7 +113,7 @@ form .captcha .recaptcha_links a:active,
 form .captcha .captcha_image a:active,
 form .captcha .recaptcha_links a.active,
 form .captcha .captcha_image a.active {
-  color: #FFF;
+  color: #ffffff;
   border-color: #460404;
   background-color: #851f1f;
 }
@@ -252,7 +260,7 @@ textarea,
 input {
   font-family: "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
   border: 1px solid #f7f7f7;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #4d4c4c;
   transition: border 0.3s;
 }
@@ -380,7 +388,7 @@ textarea.resize {
   width: calc(1em + 1px * 2);
   line-height: 0;
   margin: 0;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #f7f7f7;
   color: transparent;
 }
@@ -446,7 +454,7 @@ textarea.resize {
   transition: all 0.3s;
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   z-index: 1;
   left: 0;
   top: 0;
@@ -542,7 +550,7 @@ textarea.resize {
   margin: 0;
   line-height: 1.5;
   padding: 4px;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   font-size: 0.85em;
   white-space: nowrap;
@@ -597,7 +605,7 @@ textarea.resize {
   vertical-align: middle;
   cursor: pointer;
   margin: 0 3px;
-  color: #FFF;
+  color: #ffffff;
   background: #FFF;
   border-radius: 14px;
   width: 10px;
@@ -613,12 +621,12 @@ textarea.resize {
 }
 .cycle-slideshow .cycle-pager > *.cycle-pager-active {
   cursor: default;
-  color: #FFF;
+  color: #ffffff;
   background: #ae2929;
 }
 .cycle-slideshow [class*="cycle-"].action-button {
   background: #ae2929;
-  color: #FFF;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   z-index: 20;
@@ -637,7 +645,7 @@ textarea.resize {
 }
 .cycle-slideshow [class*="cycle-"].action-button:hover {
   background: #851f1f;
-  color: #FFF;
+  color: #ffffff;
 }
 .cycle-slideshow [class*="cycle-"].action-button::before {
   font-family: flexkit-icons;
@@ -727,7 +735,7 @@ html.tablet .mobile-loader::before {
   content: "";
   display: block;
   border: 5px solid transparent;
-  border-top-color: #FFF;
+  border-top-color: #ffffff;
   position: absolute;
   left: 0;
   right: 0;
