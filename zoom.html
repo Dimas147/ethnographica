@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include head template -->
+    {$template:_head}
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="grid_3">
+            <div class="logo">
+                <a href="{$website:url}" title="{$page:h1}" class="logo">
+                    <img src="images/logo-small.jpg" width="110" alt="seotoaster">
+                </a>
+            </div>
+        </div>
+        <div class="grid_9">
+            <h2 class="mt30px mb20px xlarge"><strong>Welcome to SEOTOASTER V2 !</strong></h2>
+            <nav>{$menu:main}</nav>
+        </div>
+    </header>
+    <hr/>
+    <aside class="grid_3">
+        <h2>Flat menu</h2>
+        {$menu:flat}
+    </aside>
+    <section class="grid_9">
+        <h1>{$page:h1}</h1>
+        <article>
+            <h3>Header widgets</h3>
+            {$header:header}
+            {$header:header1:static}
+        </article>
+        <article>
+            <h3>Content widgets</h3>
+            {$content:header}
+            {$content:header1:static}
+        </article>
+        <article>
+            <h3>Image Only widget</h3>
+            {$imageonly:photo:200}
+        </article>
+        <article>
+            <h3>Gallery Only widget</h3>
+            {$galleryonly:uniq_name}
+        </article>
+        <article>
+            <h3>Text Only widget</h3>
+            {$textonly:uniq_name}
+        </article>
+        <article>
+            <h3>Featured Area Only widget</h3>
+            {$featuredonly:name}
+        </article>
+        <article>
+            <h3>DirectUpload widget</h3>
+            {$directupload:foldername:imagename:100::crop}
+        </article>
+    </section>
+    <hr/>
+    <footer class="mt10px">
+        <p>Powered by Free &amp; Open Source Ecommerce Website Builder <a href="http://www.seotoaster.com"
+                                                                          target="_blank">SEOTOASTER</a>, Courtesy of <a
+                href="http://www.seosamba.com" target="_blank">SEO Samba</a>.</p>
+    </footer>
+</div>
+{$content:newContent}
+{$template:_footer}
+
+<!-- Include mobile elements template -->
+{$template:_mobile elements}
+
+<!-- Include scripts template -->
+{$template:_scripts}
+</body>
+</html>

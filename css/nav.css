@@ -12,32 +12,34 @@ extend ' .mobile-menu li' has no matches
 .featureditem li,
 .relatedpages li,
 .related-products li {
-  font-size: 14px;
+  font-size: 21px;
   display: inline-block;
   vertical-align: top;
 }
 @media only screen and (min-width: 800px) {
   .main_menu {
     position: relative;
+    font-family: "Raleway-Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
     z-index: 11;
-    background: #3f51b5;
-    color: #ffffff;
+    color: #333333;
   }
   .main_menu > li {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
   }
   .main_menu > li:hover,
   .main_menu a.current {
-    background: #32408f;
+    color: #ae2929;
   }
   .main_menu > li:hover ul {
     display: block;
   }
   .main_menu a {
     display: block;
-    padding: 8px 12px;
+    padding: 50px 10px;
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
   }
   .main_menu ul {
@@ -47,7 +49,7 @@ extend ' .mobile-menu li' has no matches
     z-index: 0;
     display: none;
     width: 300px;
-    background: #ffffff;
+    background: #FFF;
     color: #888888;
     box-shadow: 0 3px 5px #555555;
   }
@@ -165,12 +167,12 @@ aside .relatedpages li p {
   text-align: right;
 }
 .news-item .news-item-date {
-  color: #7c7c7c;
+  color: #999898;
 }
 .news-item .news-item-date::before {
   top: 2px;
   font-size: 16px;
-  color: #3f51b5;
+  color: #ae2929;
 }
 .news-item .news-item-tags a {
   color: #888888;
@@ -254,8 +256,8 @@ aside .relatedpages li p {
 .mobile-bar.top {
   top: 0;
   line-height: 56px;
-  color: #ffffff;
-  background: #3f51b5;
+  color: #FFF;
+  background: #ae2929;
 }
 .mobile-bar.top .btn.icon {
   width: 56px;
@@ -313,7 +315,7 @@ aside .relatedpages li p {
   -ms-flex: 1 0 100%;
   flex: 1 0 100%;
   text-transform: uppercase;
-  color: #98a2db;
+  color: #df7777;
   font-weight: 500;
   overflow-x: auto;
   height: 48px;
@@ -331,12 +333,12 @@ aside .relatedpages li p {
   height: 0;
 }
 .tabs::-webkit-scrollbar-track {
-  background: #666666;
+  background: #666;
   border-radius: 10px;
 }
 .tabs::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #cccccc;
+  background: #ccc;
 }
 .tabs .sub-menu-btn {
   display: none;
@@ -392,8 +394,8 @@ aside .relatedpages li p {
 }
 .tabs a.current {
   background-color: transparent !important;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #FFF;
+  color: #FFF;
 }
 .tabs.sub-of-main {
   display: none;
@@ -405,7 +407,7 @@ aside .relatedpages li p {
 .sub-menu-btn {
   width: 48px;
   text-align: center;
-  color: #ffffff;
+  color: #FFF;
   font-size: 1.25em;
   position: absolute;
   right: 0;
@@ -414,7 +416,7 @@ aside .relatedpages li p {
 .sub-menu-btn::before {
   content: "\e0ac";
   font-family: flexkit-icons;
-  color: #bbbbbb;
+  color: #f7f7f7;
 }
 .sub-menu-btn:hover::before,
 .sub-menu-btn.active::before {
@@ -560,10 +562,10 @@ aside .relatedpages li p {
 .m-menu li a:hover,
 .m-menu li a.current {
   background: #f2f2f2;
-  color: #3f51b5;
+  color: #ae2929;
 }
 .m-menu li:hover {
-  background: transparent;
+  color: inherit;
 }
 .m-menu li:hover ul {
   display: none;
@@ -582,8 +584,8 @@ aside .relatedpages li p {
 .dropdown-menu,
 .mobile-menu.dropdown,
 [data-dropdown-open] .dropdown-menu-mobile {
-  background: #ffffff !important;
-  color: #555555 !important;
+  background: #fff !important;
+  color: #737272 !important;
   position: absolute;
   z-index: 92 !important;
   width: 250px;

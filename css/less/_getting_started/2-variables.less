@@ -15,14 +15,14 @@
 
 // [Fonts]
 //==================================================
-@font-family-text     : Helvetica, "Helvetica Neue", Arial, sans-serif;
-@font-family-headings : "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
+@font-family-text     : "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
+@font-family-headings : "Raleway-Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
 
 // [Fonts size]
 //==================================================
 @font-size-larger     : 1.5em;
 @font-size-large      : 1.25em;
-@font-size-base       : 14px;
+@font-size-base       : 21px;
 @font-size-small      : 0.85em;
 @font-size-mini       : 0.75em;
 
@@ -43,7 +43,7 @@
 // [Grid system]
 //==================================================
 //Width for container
-@grid-container-width    : 960px;
+@grid-container-width    : 1200px;
 @grid-container-maxWidth : 95%;
 @grid-container-minWidth : 0;
 
@@ -73,12 +73,12 @@
 @gray-darker  : lighten(#000, 13.5%); // #222
 @gray-dark    : lighten(#000, 33.5%); // #555
 @gray         : lighten(#000, 53.5%); // #888
-@gray-light   : lighten(#000, 73.5%); // #bbb
+@gray-light   : #f7f7f7; // #bbb
 @gray-lighter : lighten(#000, 93.5%); // #eee
 
 // Brand Color ( color schemes => http://javierbyte.github.io/cohesive-colors/ )
 //==================================================
-@brand-primary : #3F51B5; // #c2d2da
+@brand-primary : #ae2929; // #c2d2da
 @brand-success : #4fc752; // #52ff8c | #A4F14E | #8fd400
 @brand-info    : #28b0ed; // #94C5FF           | #00a1f1
 @brand-warning : #ffc159; // #ffd17b | #FADA32 | #ffbb00
@@ -127,7 +127,7 @@
 // [Scaffolding]
 //==================================================
 @body-bg                  : #FFF;
-@text-color               : @gray-dark;
+@text-color               : #737272;
 @text-weight              : normal;
 @line-height              : 1.5;
 
@@ -139,13 +139,13 @@
 @header-color             : @text-color;
 
 // variables for Main Menu
-@nav-bg                           : @primary-bg;
-@nav-color                        : @primary-color;
+@nav-bg                           : transparent;
+@nav-color                        : #333333;
 
-@nav-bg-li-hover                  : darken(@nav-bg, 10%);
+@nav-bg-li-hover                  : transparent;
 @nav-bg-li-current                : @nav-bg-li-hover;
 
-@nav-color-li-hover               : @nav-color;
+@nav-color-li-hover               : @brand-primary;
 @nav-color-li-current             : @nav-color-li-hover;
 
 @nav-drop-down-list-bg            : #FFF;

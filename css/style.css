@@ -1,6 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+.index-page .subtitle {
+  font-size: 1.14em;
+  text-transform: uppercase;
+  color: #b5b5b5;
+}
+.index-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.index-wrapper section {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-filter: blur(0);
+}
 header {
   background: transparent;
-  color: #555555;
+  color: #737272;
 }
 header .logo {
   text-decoration: none;
@@ -14,7 +37,7 @@ aside .aside-box {
 footer {
   padding: 24px 0;
   background: transparent;
-  color: #555555;
+  color: #737272;
   font-size: 0.85em;
 }
 #go-top {
@@ -25,9 +48,9 @@ footer {
 #go-top:hover,
 #go-top:active,
 #go-top.active {
-  color: #ffffff;
-  border-color: #3f51b5;
-  background-color: #3f51b5;
+  color: #FFF;
+  border-color: #ae2929;
+  background-color: #ae2929;
 }
 form::after {
   content: "";
@@ -56,12 +79,12 @@ form .captcha .captcha_image a {
   height: auto;
   line-height: 2.3em;
   padding: 0 1em;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
   display: inline-block;
   vertical-align: middle;
-  color: #ffffff;
-  border-color: #101a80;
-  background-color: #3f51b5;
+  color: #FFF;
+  border-color: #770707;
+  background-color: #ae2929;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -82,9 +105,9 @@ form .captcha .recaptcha_links a:active,
 form .captcha .captcha_image a:active,
 form .captcha .recaptcha_links a.active,
 form .captcha .captcha_image a.active {
-  color: #ffffff;
-  border-color: #0a1153;
-  background-color: #32408f;
+  color: #FFF;
+  border-color: #460404;
+  background-color: #851f1f;
 }
 form .captcha .recaptcha_links a:active,
 form .captcha .captcha_image a:active,
@@ -227,16 +250,16 @@ label.required::after,
 select,
 textarea,
 input {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  border: 1px solid #bbbbbb;
-  background-color: #ffffff;
-  color: #2f2f2f;
+  font-family: "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  color: #4d4c4c;
   transition: border 0.3s;
 }
 select:focus,
 textarea:focus,
 input:focus {
-  border-color: #3f51b5;
+  border-color: #ae2929;
 }
 select.success,
 textarea.success,
@@ -250,7 +273,7 @@ input.error,
 select.info,
 textarea.info,
 input.info {
-  color: #2f2f2f;
+  color: #4d4c4c;
 }
 select.success,
 textarea.success,
@@ -335,7 +358,7 @@ textarea.resize {
 .forgot-password,
 .retrieveFormBlock > form + a {
   float: left;
-  margin-top: -27px;
+  margin-top: -44.5px;
 }
 .filed-upgrade {
   height: auto;
@@ -357,8 +380,8 @@ textarea.resize {
   width: calc(1em + 1px * 2);
   line-height: 0;
   margin: 0;
-  background: #ffffff;
-  border: 1px solid #bbbbbb;
+  background: #fff;
+  border: 1px solid #f7f7f7;
   color: transparent;
 }
 .filed-upgrade ~ .checkbox_radio::before {
@@ -404,13 +427,13 @@ textarea.resize {
   line-height: 1.25em;
 }
 .filed-upgrade[type="checkbox"].switcher ~ .checkbox_radio::before {
-  font-size: 0.857rem;
+  font-size: 0.571rem;
   line-height: inherit;
   content: 'OFF';
   background: none;
   color: #f25f5c;
   position: static;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
   width: 50%;
   text-align: center;
@@ -423,7 +446,7 @@ textarea.resize {
   transition: all 0.3s;
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   z-index: 1;
   left: 0;
   top: 0;
@@ -464,7 +487,7 @@ textarea.resize {
 }
 .input-label input:focus + label,
 .input-label input:valid + label {
-  color: #3f51b5;
+  color: #ae2929;
   top: -0.9em;
   font-size: 0.85em;
   line-height: 1em;
@@ -505,10 +528,10 @@ textarea.resize {
   padding: 3px;
   background: transparent;
   transition: all 0.3s;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #f7f7f7;
 }
 .img_gallery a img:hover {
-  border-color: #3f51b5;
+  border-color: #ae2929;
 }
 .img_gallery .image_caption {
   position: absolute;
@@ -519,13 +542,13 @@ textarea.resize {
   margin: 0;
   line-height: 1.5;
   padding: 4px;
-  color: #ffffff;
+  color: #FFF;
   text-align: center;
   font-size: 0.85em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: rgba(63, 81, 181, 0.8);
+  background: rgba(174, 41, 41, 0.8);
 }
 .rotator {
   position: relative;
@@ -574,7 +597,7 @@ textarea.resize {
   vertical-align: middle;
   cursor: pointer;
   margin: 0 3px;
-  color: #ffffff;
+  color: #FFF;
   background: #FFF;
   border-radius: 14px;
   width: 10px;
@@ -586,16 +609,16 @@ textarea.resize {
   font-size: 10px;
 }
 .cycle-slideshow .cycle-pager > *:hover {
-  background: #32408f;
+  background: #851f1f;
 }
 .cycle-slideshow .cycle-pager > *.cycle-pager-active {
   cursor: default;
-  color: #ffffff;
-  background: #3f51b5;
+  color: #FFF;
+  background: #ae2929;
 }
 .cycle-slideshow [class*="cycle-"].action-button {
-  background: #3f51b5;
-  color: #ffffff;
+  background: #ae2929;
+  color: #FFF;
   position: absolute;
   top: 50%;
   z-index: 20;
@@ -613,8 +636,8 @@ textarea.resize {
   font-size: 18px;
 }
 .cycle-slideshow [class*="cycle-"].action-button:hover {
-  background: #32408f;
-  color: #ffffff;
+  background: #851f1f;
+  color: #FFF;
 }
 .cycle-slideshow [class*="cycle-"].action-button::before {
   font-family: flexkit-icons;
@@ -684,7 +707,7 @@ html.tablet::before {
   bottom: 0;
   right: 0;
   z-index: 101;
-  background-color: #3f51b5;
+  background-color: #ae2929;
 }
 html.mobile .mobile-loader,
 html.tablet .mobile-loader {
@@ -704,7 +727,7 @@ html.tablet .mobile-loader::before {
   content: "";
   display: block;
   border: 5px solid transparent;
-  border-top-color: #ffffff;
+  border-top-color: #FFF;
   position: absolute;
   left: 0;
   right: 0;
@@ -789,7 +812,7 @@ html.tablet.loaded .mobile-loader {
   a::after {
     color: #888888;
     margin: 0 0 0 .5em;
-    font-size: 14px;
+    font-size: 21px;
     font-style: italic;
     text-decoration: underline;
   }

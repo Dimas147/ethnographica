@@ -1,7 +1,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-size: 14px;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 21px;
+  font-family: "Raleway-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   -webkit-font-smoothing: subpixel-antialiased !important;
-  color: #555555;
+  color: #737272;
 }
 article,
 aside,
@@ -204,12 +204,12 @@ th {
   box-sizing: border-box;
 }
 ::-moz-selection {
-  background: #3f51b5;
-  color: #ffffff;
+  background: #ae2929;
+  color: #FFF;
 }
 ::selection {
-  background: #3f51b5;
-  color: #ffffff;
+  background: #ae2929;
+  color: #FFF;
 }
 blockquote,
 q {
@@ -281,8 +281,8 @@ iframe {
 [contenteditable="true"] {
   display: inline-block;
   vertical-align: middle;
-  background: #ffffff;
-  border: 1px solid #bbbbbb;
+  background: #fff;
+  border: 1px solid #f7f7f7;
   cursor: text;
   padding: 2px 6px;
 }
@@ -462,7 +462,7 @@ select optgroup {
 .related-products .page-title {
   margin: 0 0 0.25em;
   font-size: 1.25em;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: "Raleway-Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
 }
 .listpages span,
 .listcategories span,
