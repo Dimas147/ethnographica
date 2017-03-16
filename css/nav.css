@@ -257,6 +257,9 @@ aside .relatedpages li p {
   font-size: 0.85em;
   line-height: 1.25;
 }
+#image-zoom #zoom-preview > div {
+  border-color: #ae2929 !important;
+}
 .news-item .newslog-admin-actions {
   text-align: right;
 }

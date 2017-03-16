@@ -11,9 +11,10 @@
 <section class="container page-content" role="main">
     <article class="grid_12">
         <h1 role="heading" class="text-center">{$page:h1}</h1>
-
         <p class="description text-center">{$header:description}</p>
-        {$plugin:deepzoom:zoom:1200:1400}
+        <div id="image-zoom">
+            {$plugin:deepzoom:zoom:1200:1400}
+        </div>
         {adminonly}
         <div class="panel">
             <div class="panel-header">Fill in languages:</div>
@@ -23,9 +24,6 @@
         </div>
         {/adminonly}
         {$content:content}
-        <p class="text-center">
-            <a href="" class="btn big">Show more</a>
-        </p>
     </article>
 </section>
 
