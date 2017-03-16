@@ -1,35 +1,88 @@
 // Featured Areas & Featured Pages & Related Pages
 //==================================================
-.featureapage, .featureditem li, .relatedpages li{
-    & when (@widget-FA-FP-RP){
-        margin-bottom : 30px;
-        .grid-elements(3; @grid-margin-width; true);
+.featureapage, .featureditem li, .relatedpages li {
+    & when (@widget-FA-FP-RP) {
+        position: relative;
+        margin-bottom: 0;
+        .grid-elements(4; 0; true; 3; 1);
+        padding: 5px;
 
-        a{ }
+        a {
+        }
 
-        .page-teaser-image{
-            overflow      : hidden;
-            margin-bottom : 0.5em;
+        .page-teaser-image {
+            position: relative;
+            overflow: hidden;
+            background: @gray-light;
+            img {
+            }
 
-            img{
+            &::before, &::after {
+                pointer-events: none;
+                display: block;
+                .transition();
+            }
+
+            &::before {
+                content: '';
+                .rgba(@gray-light; 65%);
+                position: absolute;
+                left: -130%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+                .skew(-30deg, 0deg);
+            }
+
+            &::after {
+                content: '';
+                .rgba(@brand-primary; 65%);
+                position: absolute;
+                right: -130%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+                .skew(-30deg, 0deg);
             }
         }
 
-        .page-title{ }
+        .page-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            .translate(-50%;-50%);
+            .opacity(0);
+            color: @primary-color;
+            z-index: 4;
+        }
 
-        span, p{ }
+        span, p {
+        }
 
-        &:hover{
+        &:hover {
 
-            a{ }
-
-            .page-teaser-image{
-                img{ }
+            a {
             }
 
-            .page-title{ }
+            .page-teaser-image {
+                &::before {
+                    left: -50%;
+                }
+                &::after {
+                    right: -50%;
+                }
+                img {
+                }
+            }
 
-            span, p{ }
+            .page-title {
+                .opacity(1);
+            }
+
+            span, p {
+            }
         }
     }
 }
@@ -37,85 +90,117 @@
 // Featured Areas
 //==================================================
 .featureditem when (@widget-FA) and (@widget-FA-FP-RP){
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 2.857rem;
+    margin-bottom: 2.857rem;
+    .inline-block-wrap(top);
+    //.flexbox(row; wrap; stretch);
 
-    li{ }
-
-    a{ }
-
-    .page-teaser-image{
-        img{ }
+    li {
     }
 
-    .page-title{ }
+    a {
+    }
 
-    span{ }
+    .page-teaser-image {
+        img {
+        }
+    }
 
-    li:hover{
+    .page-title {
+    }
 
-        a{ }
+    span {
+    }
 
-        .page-teaser-image{
-            img{ }
+    li:hover {
+
+        a {
         }
 
-        .page-title{ }
+        .page-teaser-image {
+            img {
+            }
+        }
 
-        span{ }
+        .page-title {
+        }
+
+        span {
+        }
     }
 }
 
 // Featured Pages
 //==================================================
 .featureapage when (@widget-FP) and (@widget-FA-FP-RP){
-    float : left;
+    float: left;
 
-    a{ }
-
-    .page-teaser-image{
-        img{ }
+    a {
     }
 
-    .page-title{ }
+    .page-teaser-image {
+        img {
+        }
+    }
 
-    p{ }
+    .page-title {
+    }
 
-    &:hover{
-        a{ }
+    p {
+    }
 
-        .page-teaser-image{
-            img{ }
+    &:hover {
+        a {
         }
 
-        .page-title{ }
+        .page-teaser-image {
+            img {
+            }
+        }
 
-        p{ }
+        .page-title {
+        }
+
+        p {
+        }
     }
 }
 
 // Related Pages
 //==================================================
 .relatedpages when (@widget-RP) and (@widget-FA-FP-RP){
-    li{ }
-
-    a{ }
-
-    .page-teaser-image{
-        img{ }
+    li {
     }
 
-    .page-title{ }
+    a {
+    }
 
-    span{ }
+    .page-teaser-image {
+        img {
+        }
+    }
 
-    li:hover{
-        a{ }
+    .page-title {
+    }
 
-        .page-teaser-image{
-            img{ }
+    span {
+    }
+
+    li:hover {
+        a {
         }
 
-        .page-title{ }
+        .page-teaser-image {
+            img {
+            }
+        }
 
-        span{ }
+        .page-title {
+        }
+
+        span {
+        }
     }
 }

@@ -205,11 +205,11 @@ th {
 }
 ::-moz-selection {
   background: #ae2929;
-  color: #FFF;
+  color: #ffffff;
 }
 ::selection {
   background: #ae2929;
-  color: #FFF;
+  color: #ffffff;
 }
 blockquote,
 q {
@@ -281,7 +281,7 @@ iframe {
 [contenteditable="true"] {
   display: inline-block;
   vertical-align: middle;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #f7f7f7;
   cursor: text;
   padding: 2px 6px;

@@ -5,31 +5,30 @@ html, body {
 }
 
 .index-page {
-    .title {
-        margin-bottom: 68px;
-    }
-    .subtitle {
-        font-size: 1.142em;
-        text-transform: uppercase;
-        color: #b5b5b5;
-        letter-spacing: 5px;
-        line-height: 1.8;
-    }
-}
 
-.index-container{
-    padding-top: 100px;
 }
 
 .index-wrapper {
     min-height: 100%;
     position: relative;
-    section {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        .translate(0; -50%);
+}
+
+.index-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    padding-top: 4.76em;
+    .translate(0; -50%);
+    .title {
+        margin-bottom: 1.3em;
+    }
+    .subtitle {
+        font-size: 1.142em;
+        text-transform: uppercase;
+        color: #b5b5b5;
+        letter-spacing: 0.2em;
+        line-height: 1.8;
     }
 }
 
@@ -52,12 +51,13 @@ header {
 
     // -- LOGO Style
     .logo {
+        margin-top: 0.73em;
+        margin-bottom: 0;
+        line-height: 1;
         text-decoration: none;
-
         a {
             display: inline-block;
         }
-
         img {
         }
     }
@@ -96,4 +96,11 @@ footer {
 //==================================================
 #go-top {
     .button-color(#ffffff; fade(#000000, 50%); fade(#000000, 50%); @primary-color; @primary-bg; @primary-bg);
+}
+
+.page-content{
+    padding: 4.285rem 0;
+    .description{
+        font-size: 1.523em;
+    }
 }

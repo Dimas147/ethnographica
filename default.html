@@ -1,59 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Include head template -->
-        {$template:_head}
-    </head>
-    <body>
+<head>
+    <!-- Include head template -->
+    {$template:_head}
+</head>
+<body>
 
-        <!-- Container -->
-        <div id="page" class="container">
+{$template:_header}
 
-            <!-- Include header template -->
-            {$template:_header}
+<section class="container page-content" role="main">
+    <article class="grid_12">
+        <h1 role="heading" class="text-center">{$page:h1}</h1>
 
-            <h1 class="grid_12" role="heading">{$page:h1}</h1>
-
-            <!-- Content box -->
-            <section class="grid_6 push_3" role="main">
-                {repeat:Section box:key:1}
-                <article>
-                    <h2>{$header:content_key}</h2>
-                    {$content:content_key1}
-                    {$content:content_key2}
-                </article>
-                {/repeat}
-            </section>
-
-            <!-- Left box -->
-            <aside class="grid_3 pull_6" role="complementary">
-                {repeat:Aside left box:key:1}
-                <section class="aside-box">
-                    <h3>{$header:left_key}</h3>
-                    {$content:left_key}
-                </section>
-                {/repeat}
-            </aside>
-
-            <!-- Right box -->
-            <aside class="grid_3" role="complementary">
-                {repeat:Aside right box:key:1}
-                <section class="aside-box">
-                    <h3>{$header:right_key}</h3>
-                    {$content:right_key}
-                </section>
-                {/repeat}
-            </aside>
-
-            <!-- Footer -->
-            <!-- Include Footer template -->
-            {$template:_footer}
+        <p class="description text-center">{$header:description}</p>
+        {$plugin:deepzoom:zoom:1200:1400}
+        {adminonly}
+        <div class="panel">
+            <div class="panel-header">Fill in languages:</div>
+            <div class="panel-content">
+                {$plugin:deepzoom:upload}
+            </div>
         </div>
+        {/adminonly}
+        {$content:content}
+        <p class="text-center">
+            <a href="" class="btn big">Show more</a>
+        </p>
+    </article>
+</section>
 
-        <!-- Include mobile elements template -->
-        {$template:_mobile elements}
-
-        <!-- Include scripts template -->
-        {$template:_scripts}
-    </body>
+{$template:_footer}
+{$template:_mobile elements}
+{$template:_scripts}
+</body>
 </html>

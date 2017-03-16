@@ -5,13 +5,14 @@
     @border-width : @button-border-width;
     @radius       : @button-border-radius
 ) {
-    text-align      : center;
-    cursor          : pointer;
-    text-decoration : none;
-    height          : auto;
-    line-height     : unit(@button-line-height * 2, em);
-    padding         : 0 1em;
-    font-family     : @font-family-text;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: auto;
+    line-height: unit(@button-line-height * 2, em);
+    padding: 0 1em;
+    font-family: @font-family-headings;
     .inline-block();
     .button-color(@color; @background; @border);
     .border-radius(@radius);
@@ -19,11 +20,11 @@
     .box-shadow(none; @input-shadow-focus);
     .box-shadow(none; @input-inner-shadow);
     & when (@border-width > 0) {
-        border-width : @border-width;
-        border-style : solid;
+        border-width: @border-width;
+        border-style: solid;
     }
     & when (@border-width = 0), (@border-width = none) {
-        border : none;
+        border: none;
     }
     & when (@button-transition) {
         .transition(background 0.3s);
@@ -42,12 +43,13 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 .link-color(@color : @link-color; @color-hover : darken(@color, 30%)) {
-    color : @color;
+    color: @color;
 
     &:hover {
-        color : @color-hover;
+        color: @color-hover;
     }
 }
+
 .button-color(
     @color;
     @background;
@@ -56,28 +58,28 @@
     @background2 : darken(extract(@background, 1), 10%);
     @border2     : darken(extract(@border, 1), 10%)
 ) {
-    color            : extract(@color, 1);
-    border-color     : extract(@border, 1);
-    background-color : extract(@background, 1);
+    color: extract(@color, 1);
+    border-color: extract(@border, 1);
+    background-color: extract(@background, 1);
 
     &:hover, &:active, &.active {
         & when (length(@color) = 1) {
-            color : @color2;
+            color: @color2;
         }
         & when (length(@color) = 2) {
-            color : extract(@color, 2);
+            color: extract(@color, 2);
         }
         & when (length(@border) = 1) {
-            border-color : @border2;
+            border-color: @border2;
         }
         & when (length(@border) = 2) {
-            border-color : extract(@border, 2);
+            border-color: extract(@border, 2);
         }
         & when (length(@background) = 1) {
-            background-color : @background2;
+            background-color: @background2;
         }
         & when (length(@background) = 2) {
-            background-color : extract(@background, 2);
+            background-color: extract(@background, 2);
         }
     }
 }
